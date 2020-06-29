@@ -13,9 +13,12 @@ const generateAbout = aboutTesting => {
 };
 
 const generateProjects = projectsArr => {
+  console.log(projectsArr)
   return `
     <section class="my-3" id="portfolio">
-      <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
+      <h2 class="text-dark bg-primary p-2 display-inline-block">Links</h2>
+      <a href="enter github link to your project" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Repository</a>
+      <a href="enter github link to your project" class="btn mt-auto"><i class="fab fa-chrome mr-2"></i>View Live URL</a>
       <div class="flex-row justify-space-between">
       ${projectsArr
         .filter(({ feature }) => feature)

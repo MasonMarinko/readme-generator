@@ -2,14 +2,14 @@ const { writeFile, copyFile } = require('./utils/generate-site.js');
 
 const generatePage = require('./src/page-template');
 
-const inquirer = require('inquirer');
+const inquirer = require('inquirer'); 
 
 const promptUser = () => {
     return inquirer.prompt([
         {
             type: 'input',
             name: 'name',
-            message: 'What is your name?',
+            message: 'What is your project name?',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -20,13 +20,25 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'github',
-            message: 'Enter your GitHub Username',
+            name: 'live',
+            message: 'Please enter website URL',
             validate: githubInput => {
                 if (githubInput) {
                     return true;
                 } else {
-                    console.log('Please enter your github name!');
+                    console.log('Please enter your live website URL');
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Enter your Github Repository URL',
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your github repository URL!');
                 }
             }
         },

@@ -1,9 +1,9 @@
 :root {
-  --primary: #9dbdc6;
-  --secondary: #daeaef;
-  --tertiary: #ff3d2e;
-  --light: #ffffff;
-  --dark: #272f32;
+  --primary: white;
+  --secondary: white;
+  --tertiary: white;
+  --light: white;
+  --dark: white;
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -99,7 +99,7 @@ nav a:hover {
 .portfolio-languages {
   font-size: 1rem;
   font-style: italic;
-  color: var(--light);
+  color: black;
 }
 
 .btn {
@@ -111,12 +111,12 @@ nav a:hover {
   border-radius: var(--border-radius);
   color: var(--dark);
   outline: none;
-  background-color: var(--primary);
+  background-color: black;
 }
 
 .btn:hover {
-  color: var(--dark);
-  background-color: var(--secondary);
+  color: white;
+  background-color: black;
 }
 
 .btn-inline {
@@ -682,23 +682,23 @@ nav a:hover {
 }
 
 .text-primary {
-  color: var(--primary);
+  color: black;
 }
 
 .text-secondary {
-  color: var(--secondary);
+  color: black;
 }
 
 .text-tertiary {
-  color: var(--tertiary);
+  color: black;
 }
 
 .text-light {
-  color: var(--light);
+  color: black;
 }
 
 .text-dark {
-  color: var(--dark);
+  color: black;
 }
 
 /* BACKGROUND UTILS */
