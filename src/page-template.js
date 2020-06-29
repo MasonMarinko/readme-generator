@@ -1,25 +1,16 @@
-// create the about section
-const generateAbout = aboutTesting => {
-  if (!aboutTesting) {
-    return '';
-  }
+// // create the about section
+// const generateAbout = aboutTesting => {
+//   if (!aboutTesting) {
+//     return '';
+//   }
 
-  return `
-  <section class = "my-3" id="about">
-  <h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2>
-  <p>${aboutTesting}</p>
-  </section>
-  `;
-};
+//   return `
+//   `;
+// };
 
 const generateProjects = projectsArr => {
   console.log(projectsArr)
   return `
-    <section class="my-3" id="portfolio">
-      <h2 class="text-dark bg-primary p-2 display-inline-block">Links</h2>
-      <a href="enter github link to your project" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Repository</a>
-      <a href="enter github link to your project" class="btn mt-auto"><i class="fab fa-chrome mr-2"></i>View Live URL</a>
-      <div class="flex-row justify-space-between">
       ${projectsArr
         .filter(({ feature }) => feature)
         .map(({ name, description, languages, link }) => {
@@ -88,7 +79,13 @@ module.exports = templateData => {
       </div>
     </header>
     <main class="container my-5">
-    ${generateAbout(about)}
+
+    <section class="my-3" id="portfolio">
+      <h2 class="text-dark bg-primary p-2 display-inline-block">Links</h2>
+      <a href="${header.link}" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Repository</a>
+      <a href="${header.live}" class="btn mt-auto"><i class="fab fa-chrome mr-2"></i>View Live URL</a>
+      <div class="flex-row justify-space-between">
+    </section>
     ${generateProjects(projects)}
     </main>
     <footer class="container text-center py-3">
