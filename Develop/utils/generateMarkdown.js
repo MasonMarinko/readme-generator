@@ -1,3 +1,11 @@
+// function to generate markdown for README
+function generateMarkdown(data) {
+  return `# ${data.title}
+
+`;
+}
+
+module.exports = generateMarkdown;
 function generateBadge(license) {
   if (license === 'Apache 2.0') {
     const badge =  'https://img.shields.io/badge/License-Apache%202.0-brightgreen'
