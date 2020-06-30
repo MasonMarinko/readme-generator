@@ -85,7 +85,7 @@ nav {
 }
 
 nav a:hover {
-  color: var(--secondary);
+  color: black;
   background-color: var(--dark);
 }
 
@@ -100,6 +100,15 @@ nav a:hover {
   font-size: 1rem;
   font-style: italic;
   color: black;
+}
+
+.portfolio-item-title {
+  border-bottom: 1px dotted black ;
+  margin-bottom: 20px;
+}
+
+.user-input-bottom {
+  margin-bottom: 50px;
 }
 
 .btn {

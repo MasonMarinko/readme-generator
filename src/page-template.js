@@ -1,58 +1,67 @@
-// // create the about section
-// const generateAbout = aboutTesting => {
-//   if (!aboutTesting) {
-//     return '';
-//   }
-
-//   return `
-//   `;
-// };
+//===== Check if user had input, if no, "None" ======//
+const inputChoice = (userInput) => {
+  if (!userInput) {
+    return `
+    <p class = "user-input-bottom">None</p>
+    `;
+  } else {
+    return `
+    <p class = "user-input-bottom">${userInput}</p>
+    `;
+  }
+};
 
 const generateProjects = projectsArr => {
-  console.log(projectsArr)
   return `
       ${projectsArr
-        .filter(({ feature }) => feature)
-        .map(({ name, description, languages, link }) => {
+        .map(({...questions }) => {
+          console.log(questions)
           return `
+          <section class="my-3" id="portfolio">
+          <h2 class="text-dark bg-primary p-2 display-inline-block">Links</h2>
+          <a href="${questions.link}" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Repository</a>
+          <a href="${questions.live}" class="btn mt-auto"><i class="fab fa-chrome mr-2"></i>View Live URL</a>
+          <div class="flex-row justify-space-between">
           <div class="col-12 mb-2 bg-dark text-light p-3">
-            <h3 class="portfolio-item-title text-light">${name}</h3>
             <h5 class="portfolio-languages">
               Built With:
-              ${languages.join(', ')}
+              ${questions.languages.join(', ')}
             </h5>
-            <p>${description}</p>
-            <a href="${link}" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
-          </div>
-        `;
-        })
-        .join('')}
+            </br>
+            <h3 class="portfolio-item-title text-light">Description:</h3>
+            <p class = "user-input-bottom">${questions.description}</p>
 
-      ${projectsArr
-        .filter(({ feature }) => !feature)
-        .map(({ name, description, languages, link }) => {
-          return `
-          <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
-            <h3 class="portfolio-item-title text-light">${name}</h3>
-            <h5 class="portfolio-languages">
-              Built With:
-              ${languages.join(', ')}
-            </h5>
-            <p>${description}</p>
-            <a href="${link}" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
-          </div>
+            </br>
+            <h3 class="portfolio-item-title text-light">Installation:</h3>
+            ${inputChoice(questions.install)}
+
+            </br>
+            <h3 class="portfolio-item-title text-light">Usage:</h3>
+            ${inputChoice(questions.usage)}
+
+            </br>
+            <h3 class="portfolio-item-title text-light">Credits:</h3>
+            ${inputChoice(questions.credits)}
+
+            </br>
+            <h3 class="portfolio-item-title text-light">Credits:</h3>
+            ${inputChoice(questions.credits)}
+
+            </br>
+            <h3 class="portfolio-item-title text-light">License:</h3>
+            ${inputChoice(questions.license)}
+
+
+            </div>
         `;
         })
         .join('')}
-      </div>
-    </section>
   `;
 };
 
 module.exports = templateData => {
   // destructure page data by section
-  const { projects, about, ...header } = templateData;
-
+  const { projects, ...header } = templateData;
   return `
   <!DOCTYPE html>
   <html lang="en">
@@ -71,20 +80,10 @@ module.exports = templateData => {
     <header>
       <div class="container flex-row justify-space-between align-center py-3">
         <h1 class="page-title text-secondary bg-dark py-2 px-3">${header.name}</h1>
-        <nav class="flex-row">
-          <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${
-            header.github
-          }">GitHub</a>
-        </nav>
       </div>
     </header>
     <main class="container my-5">
-
-    <section class="my-3" id="portfolio">
-      <h2 class="text-dark bg-primary p-2 display-inline-block">Links</h2>
-      <a href="${header.link}" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Repository</a>
-      <a href="${header.live}" class="btn mt-auto"><i class="fab fa-chrome mr-2"></i>View Live URL</a>
-      <div class="flex-row justify-space-between">
+    <section class = "my-3" id="about">
     </section>
     ${generateProjects(projects)}
     </main>

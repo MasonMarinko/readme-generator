@@ -5,19 +5,9 @@ const generatePage = require('./src/page-template');
 const inquirer = require('inquirer'); 
 
 const promptUser = () => {
-    return inquirer.prompt([
-    ]);
-};
-
-const promptProject = portfolioData => {
-    console.log(portfolioData)
-    // If there's no 'projects' array property, create one
-    if (!portfolioData.projects) {
-    portfolioData.projects = [];
-    }
     console.log(`
     ======================
-    Add a New Project
+    Let's make a README!
     ======================
     `);
     return inquirer.prompt([
@@ -32,7 +22,16 @@ const promptProject = portfolioData => {
                     console.log('Please enter your name!');
                 }
             }
-        },
+        }
+    ]);
+};
+
+const promptProject = portfolioData => {
+    // If there's no 'projects' array property, create one
+    if (!portfolioData.projects) {
+    portfolioData.projects = [];
+    }
+    return inquirer.prompt([
         {
             type: 'input',
             name: 'description',
@@ -48,9 +47,9 @@ const promptProject = portfolioData => {
         {
             type: 'input',
             name: 'live',
-            message: 'Please enter website URL',
-            validate: githubInput => {
-                if (githubInput) {
+            message: 'Please enter live website URL. (Required)',
+            validate: liveInput => {
+                if (liveInput) {
                     return true;
                 } else {
                     console.log('Please enter your live website URL');
@@ -70,23 +69,44 @@ const promptProject = portfolioData => {
             }
         },
         {
+            type: 'input',
+            name: 'install',
+            message: 'What are the installation instructions? Leave blank for "None"',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'What are the usage instructions? Leave blank for "None"',
+        },
+        {
+            type: 'input',
+            name: 'credits',
+            message: 'Were there any collaborators? Leave blank for "None"',
+        },
+        {
+            type: 'checkbox',
+            name: 'license',
+            message: 'Which license does this project fall under?',
+            choices: []
+        },
+        {
             type: 'checkbox',
             name: 'languages',
             message: 'What did you do this project with? (Check all that apply',
             choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
-        },
-        {
-            type: 'confirm',
-            name: 'feature',
-            message: 'Would you like to feature this project?',
-            default: false
-        },
-        {
-            type: 'confirm',
-            name: 'confirmAddProject',
-            message: 'Would you like to enter another project?',
-            default: false
         }
+        // {
+        //     type: 'confirm',
+        //     name: 'feature',
+        //     message: 'Would you like to feature this project?',
+        //     default: false
+        // },
+        // {
+        //     type: 'confirm',
+        //     name: 'confirmAddProject',
+        //     message: 'Would you like to enter another project?',
+        //     default: false
+        // }
     ])  .then(projectData => {
         portfolioData.projects.push(projectData);
         if (projectData.confirmAddProject) {
