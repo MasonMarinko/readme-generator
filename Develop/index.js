@@ -1,10 +1,8 @@
-// add generateMarkdown
+//======= function that converts answers into markdown============//
 const generateMarkdown = require('./utils/generateMarkdown.js');
-// add inquirer
 const inquirer = require('inquirer');
-// add fs
 const fs = require('fs');
-// array of questions for user
+// ========== questions beginning===============//
 const questions = [{
         type: 'input',
         name: 'title',
@@ -139,13 +137,7 @@ const questions = [{
 
 // function to write README file
 function writeToFile (fileName, markDown) {
-
-    fs.mkdir('../Output/' + fileName, { recursive: true }, function (err) {
-        if (err) {
-            return console.log(err);
-        }
-    });
-    fs.writeFile('../Output/' + fileName + '/README.md', markDown, function (err) {
+    fs.writeFile('../Output/' + fileName + ' README.md', markDown, function (err) {
         if (err) {
             return console.log(err);
         }
@@ -154,13 +146,12 @@ function writeToFile (fileName, markDown) {
     return console.log('README created! View it in the Output folder.');
 };
 
-// function to initialize program
+// function to begin program
 function init(questionsArr) {
-    // const answerData = [];
     console.log(`
-  =================
-  Create New README
-  =================
+  ====================
+  Let's Make a README!
+  ====================
     `);
     return inquirer.prompt(questionsArr)
         .then(answers => {
