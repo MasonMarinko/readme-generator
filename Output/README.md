@@ -7,7 +7,7 @@ Repository Link: https://www.github.com/masonmarinko/readme-generator
 Live URL Link: https://masonmarinko.github.io/readme-generator
 
 ## Description
-Using command prompt you will answer questions after which a markdown readme will be created.
+Using command prompt you type in answers to questions and from there you create a markdown README
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,10 +18,10 @@ Using command prompt you will answer questions after which a markdown readme wil
 * [Questions](#questions)
 
 ## Installation
-You just download all the items and in the command prompt you would start with "node index"
+download, and open command prompt, then type "node index"
 
 ## Usage 
-You download and type something
+no instructions necessary
 
 
 ## License
@@ -29,12 +29,13 @@ This project is covered under the following license(s):
 MIT
 
 ## Contributing
-None
+I did it all myself like magic
 
 ## Testing
-No need for testing as it already works.
+No testing instructions needed, bugs worked out
 
 ## Questions
+
 GitHub Profile: [masonmarinko](https://github.com/masonmarinko)
 
 Questions? Contact Me: <crason8@gmail.com>
