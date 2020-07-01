@@ -1,13 +1,13 @@
 # readme generator ![MIT Badge](https://img.shields.io/badge/License-MIT-brightgreen)
 
 ## Links
-[readme generator Repository] https://github.com/masonmarinko/readme-generator
-[readme generator Live URL]   https://masonmarinko.github.io/readme-generator
+[Repository] (http://www.github.com/masonmarinko/readme-generator)
+[Live URL]   (https://masonmarinko.github.io/masonmarinko/readme-generator)
 
 
 
 ## Description
-You can type in command prompt and get your answers put into a readme markdown document.
+something you can type in command prompt and then makes a readme
 
 
 
@@ -22,12 +22,12 @@ You can type in command prompt and get your answers put into a readme markdown d
 
 
 ## Installation
-install it real good
+no installation instructions
 
 
 
 ## Usage 
-You can use this however you want.
+no example are needed
 
 
 
@@ -39,12 +39,12 @@ MIT
 
 
 ## Contributing
-no contribution guidelines
+no contributions for this thing
 
 
 
 ## Testing
-no testing instructions
+no testing, stop it
 
 
 
