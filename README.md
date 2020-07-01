@@ -20,8 +20,11 @@ Live URL Link: https://masonmarinko.github.io/readme-generator
 
 ## Installation
 1) Download repository
+
 2) Once downloaded open command prompt and add the "Inquirer" through npm by typing "npm install inquirer".
+
 3) Once completed and ready to start ensure you are in the readme-generator/Develop folder.
+
 4) You can then type "node index" in the command prompt to begin your README creation.
 
 ## Usage (After Installation)
