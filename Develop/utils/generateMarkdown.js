@@ -41,9 +41,9 @@ return `# ${questions.title} ![${license} Badge](${generateBadge(license)})
 
 ## Links
 
-Repository Link: (${questions.repo})
+Repository Link: ${questions.repo}
 
-Live URL Link: (${questions.liveURL})
+Live URL Link: ${questions.liveURL}
 
 ## Description
 ${questions.description}
