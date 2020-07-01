@@ -30,7 +30,7 @@ function addVideo(data) {
   }
 };
 
-// function to generate markdown for README
+//============ create the markdown ===================//
 function generateMarkdown(data) {
 
   const {license, ...questions} = data;
@@ -38,6 +38,10 @@ function generateMarkdown(data) {
   generateBadge(license)
 
 return `# ${questions.title} ![${license} Badge](${generateBadge(license)})
+
+## Links
+[${questions.title} Repository] ${questions.repo}
+[${questions.title} Live URL]   ${questions.liveURL}
 
 
 

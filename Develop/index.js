@@ -37,7 +37,31 @@ const questions = [{
             if (titleInput) {
                 return true;
             } else {
-                console.log('Please enter a title for your project!');
+                console.log('Please provide the repository URL for your project!');
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'repo',
+        message: 'Please provide the live website URL for your project (Required)',
+        validate: repoInput => {
+            if (repoInput) {
+                return true;
+            } else {
+                console.log('Please provide your projects live URL!');
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'liveURL',
+        message: 'Please provide the URL for your projects repository (Required)',
+        validate: liveURLInput => {
+            if (liveURLInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
             }
         }
     },
