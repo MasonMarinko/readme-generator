@@ -1,13 +1,13 @@
-# readme-generator ![MIT Badge](https://img.shields.io/badge/License-MIT-brightgreen)
+# test ![MIT Badge](https://img.shields.io/badge/License-MIT-brightgreen)
 
 ## Links
 
-Repository Link: https://www.github.com/masonmarinko/readme-generator
+Repository Link: test
 
-Live URL Link: https://masonmarinko.github.io/readme-generator
+Live URL Link: test
 
 ## Description
-Using command prompt you type in answers to questions and from there you create a markdown README
+test
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,10 +18,10 @@ Using command prompt you type in answers to questions and from there you create 
 * [Questions](#questions)
 
 ## Installation
-download, and open command prompt, then type "node index"
+test
 
 ## Usage 
-no instructions necessary
+test
 
 
 ## License
@@ -29,14 +29,13 @@ This project is covered under the following license(s):
 MIT
 
 ## Contributing
-I did it all myself like magic
+test
 
 ## Testing
-No testing instructions needed, bugs worked out
+test
 
 ## Questions
 
-GitHub Profile: [masonmarinko](https://github.com/masonmarinko)
+GitHub Profile: [test](https://github.com/test)
 
-Questions? Contact Me: <crason8@gmail.com>
-
+Questions? Contact Me: <test>
