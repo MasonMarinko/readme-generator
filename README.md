@@ -1,8 +1,8 @@
 # readme-generator ![MIT Badge](https://img.shields.io/badge/License-MIT-brightgreen)
 
 ## Links
-[Repository] (https://www.github.com/masonmarinko/readme-generator)
-[Live URL]   (https://masonmarinko.github.io/readme-generator)
+[Repository](https://www.github.com/masonmarinko/readme-generator)
+[Live URL](https://masonmarinko.github.io/readme-generator)
 
 
 
@@ -46,11 +46,6 @@ no contributions
 ## Testing
 no testing stuff
 
-
-
-## Questions
-GitHub Profile: [masonmarinko](https://github.com/masonmarinko)
-Reach me via email at <crason8@gmail.com>
 
 
 ## Questions
