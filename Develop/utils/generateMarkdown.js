@@ -33,23 +33,19 @@ function addVideo(data) {
 // function to generate markdown for README
 function generateMarkdown(data) {
 
-  const {
-    title,
-    description,
-    installation,
-    usage,
-    video,
-    license,
-    contributing,
-    testing,
-    ...questions
-  } = data;
+  const {license, ...questions} = data;
 
   generateBadge(license)
 
-return `# ${title} ![${license} Badge](${generateBadge(license)})
+return `# ${questions.title} ![${license} Badge](${generateBadge(license)})
+
+
+
 ## Description
-${description}
+${questions.description}
+
+
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -57,18 +53,36 @@ ${description}
 * [License](#license)
 * [Testing](#testing)
 * [Questions](#questions)
+
+
+
 ## Installation
-${installation}
+${questions.installation}
+
+
+
 ## Usage 
-${usage}
+${questions.usage}
 ${addVideo(data)}
+
+
+
 ## License
 This project is covered under the following license(s):
 ${license}
+
+
+
 ## Contributing
-${contributing}
+${questions.contributing}
+
+
+
 ## Testing
-${testing}
+${questions.testing}
+
+
+
 ## Questions
 GitHub Profile: [${questions.github}](https://github.com/${questions.github})
 Reach me via email at <${questions.email}>
