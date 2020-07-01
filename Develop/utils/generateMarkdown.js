@@ -74,7 +74,9 @@ ${questions.contributing}
 ${questions.testing}
 
 ## Questions
+
 GitHub Profile: [${questions.github}](https://github.com/${questions.github})
+
 Questions? Contact Me: <${questions.email}>
 `;
 };
