@@ -2,12 +2,12 @@
 
 ## Links
 
-Repository Link: https://www.github.com/masonmarinko/readme-generator
+Repository Link: https://masonmarinko.github.io/readme-generator
 
-Live URL Link: https://masonmarinko.github.io/readme-generator
+Live URL Link: https://www.github.com/masonmarinko/readme-generator
 
 ## Description
-User can type answers in command prompt and make a README
+Using the command prompt, user answers questions and is then given a professional README.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,11 +18,11 @@ User can type answers in command prompt and make a README
 * [Questions](#questions)
 
 ## Installation
-Download, start, answer questions, enjoy!
+download, open command prompt and start with "node index". Make sure you are in the "Develop" folder.
 
 ## Usage 
-Just answer the questions
-
+Once inside the correct folder make sure you answer all questions, after which in the "Output" folder you will have a new README.
+Click [here](https://youtu.be/Rhb7cylB70U) for a video demo
 
 ## License
 This project is covered under the following license(s):
@@ -32,10 +32,10 @@ MIT
 Not Applicable
 
 ## Testing
-No testing required
+No testing is needed.
 
 ## Questions
 
 GitHub Profile: [masonmarinko](https://github.com/masonmarinko)
 
-Questions? Contact Me: <mason.p.marinko@gmail.com>
+Questions? Contact Me: <Mason.P.Marinko@gmail.com>

@@ -13,7 +13,6 @@ Live URL Link: https://masonmarinko.github.io/readme-generator
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Testing](#testing)
 * [Questions](#questions)
 
 ## Video Demo
