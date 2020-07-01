@@ -1,9 +1,13 @@
-#   ![Apache 2.0 Badge](https://img.shields.io/badge/License-Apache%202.0-brightgreen)
+# readme-generator ![MIT Badge](https://img.shields.io/badge/License-MIT-brightgreen)
 
+## Links
+
+Repository Link: <https://github.com/masonmarinko/readme-generator>
+
+Live URL Link: <https://masonmarinko.github.io/readme-generator>
 
 ## Description
- 
-
+answer questions in command prompt and the answers will then be put into a markdown readme
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,45 +17,22 @@
 * [Testing](#testing)
 * [Questions](#questions)
 
-
 ## Installation
- 
-
+there isn't much to it but just answer questions
 
 ## Usage 
- 
-
-
+You just answer questions starting with typing "node index" to start it.
 
 ## License
 This project is covered under the following license(s):
-Apache 2.0
-
+MIT
 
 ## Contributing
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+no guidelines, pretty straight forward
 
 ## Testing
- 
-
+there are no testing instructions
 
 ## Questions
-GitHub Profile: [ ](https://github.com/ )
-Reach me via email at < >
+GitHub Profile: [masonmarinko](https://github.com/masonmarinko)
+Questions? Contact me: <crason8@gmail.com>

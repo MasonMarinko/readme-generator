@@ -80,7 +80,7 @@ const questions = [{
     {
         type: 'input',
         name: 'installation',
-        message: 'Provide a description of how to install your project (Required)',
+        message: 'Provide instructions on how to install your project (Required)',
         validate: installationInput => {
             if (installationInput) {
                 return true;
@@ -104,7 +104,7 @@ const questions = [{
     {
         type: 'confirm',
         name: 'confirmVideo',
-        message: 'Would you like to add a video demo link in the usage section?',
+        message: 'Do you have a video demo you would like to add to this README?',
         default: false
     },
     {
@@ -116,7 +116,7 @@ const questions = [{
     {
         type: 'list',
         name: 'license',
-        message: 'Choose a license (Required)',
+        message: 'Which license applies to your project? (Required)',
         choices: ['Apache 2.0', 'GNU GPLv3', 'MIT', 'ISC'],
         validate: licenseInput => {
             if (licenseInput) {
@@ -141,7 +141,7 @@ const questions = [{
     {
         type: 'input',
         name: 'testing',
-        message: 'Provide project testing instructions (Required)',
+        message: 'Provide any testing instructions the user should know (Required)',
         validate: testingInput => {
             if (testingInput) {
                 return true;

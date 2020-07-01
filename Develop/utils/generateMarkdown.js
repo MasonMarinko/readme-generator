@@ -40,15 +40,13 @@ function generateMarkdown(data) {
 return `# ${questions.title} ![${license} Badge](${generateBadge(license)})
 
 ## Links
-[${questions.title} Repository] ${questions.repo}
-[${questions.title} Live URL]   ${questions.liveURL}
 
+Repository Link: (${questions.repo})
 
+Live URL Link: (${questions.liveURL})
 
 ## Description
 ${questions.description}
-
-
 
 ## Table of Contents
 * [Installation](#installation)
@@ -58,38 +56,26 @@ ${questions.description}
 * [Testing](#testing)
 * [Questions](#questions)
 
-
-
 ## Installation
 ${questions.installation}
-
-
 
 ## Usage 
 ${questions.usage}
 ${addVideo(data)}
 
-
-
 ## License
 This project is covered under the following license(s):
 ${license}
 
-
-
 ## Contributing
 ${questions.contributing}
-
-
 
 ## Testing
 ${questions.testing}
 
-
-
 ## Questions
 GitHub Profile: [${questions.github}](https://github.com/${questions.github})
-Reach me via email at <${questions.email}>
+Questions? Contact Me: <${questions.email}>
 `;
 };
 
