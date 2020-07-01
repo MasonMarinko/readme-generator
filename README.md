@@ -1,13 +1,15 @@
 # readme-generator ![MIT Badge](https://img.shields.io/badge/License-MIT-brightgreen)
 
 ## Links
-[Repository](https://www.github.com/masonmarinko/readme-generator)
-[Live URL](https://masonmarinko.github.io/readme-generator)
+
+Repository Link: <https://github.com/masonmarinko/readme-generator>
+
+Live URL Link: <https://masonmarinko.github.io/readme-generator>
 
 
 
 ## Description
-you can type in the command prompt and get your answers put into a markdown readme
+answer questions in command prompt and the answers will then be put into a markdown readme
 
 
 
@@ -22,12 +24,12 @@ you can type in the command prompt and get your answers put into a markdown read
 
 
 ## Installation
-Do this then that then that
+there isn't much to it but just answer questions
 
 
 
 ## Usage 
-there are no usage instructions
+You just answer questions starting with typing "node index" to start it.
 
 
 
@@ -39,12 +41,12 @@ MIT
 
 
 ## Contributing
-no contributions
+no guidelines, pretty straight forward
 
 
 
 ## Testing
-no testing stuff
+there are no testing instructions
 
 
 
